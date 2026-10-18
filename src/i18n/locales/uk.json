@@ -1,0 +1,16 @@
+{
+  "navigation": {
+    "dashboard": "Головна",
+    "transactions": "Транзакції",
+    "analytics": "Аналітика",
+    "budgets": "Бюджети"
+  },
+  "header": {
+    "welcome": "Вітаємо!",
+    "description": "Огляд ваших фінансів."
+  },
+  "common": {
+  "language": "Мова",
+  "profile": "Профіль"
+}
+}

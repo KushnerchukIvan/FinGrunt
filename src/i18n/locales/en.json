@@ -1,0 +1,16 @@
+{
+  "navigation": {
+    "dashboard": "Dashboard",
+    "transactions": "Transactions",
+    "analytics": "Analytics",
+    "budgets": "Budgets"
+  },
+  "header": {
+    "welcome": "Welcome!",
+    "description": "Your financial overview."
+  },
+  "common": {
+  "language": "Language",
+  "profile": "Profile"
+}
+}

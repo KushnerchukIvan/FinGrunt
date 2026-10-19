@@ -9,17 +9,90 @@
   },
   "header": {
     "welcome": "Welcome!",
-    "description": "Your financial overview."
+    "description": "Your projects at a glance."
   },
   "common": {
     "language": "Language",
     "profile": "Profile",
-    "financialOverview": "Financial overview"
+    "close": "Close"
   },
   "paragraph": {
     "proTip": "Pro tip",
-    "vsLastMonth": "vs. last month",
-    "HereIsWhatIsHappeningWithYourMoney": "Here is what is happening with your money.",
     "breakBigProjectsIntoSmallTasks": "Break big projects into small tasks to make steady progress."
+  },
+  "dashboard": {
+    "subtitle": "Here is what is happening with your projects.",
+    "overview": "Projects overview",
+    "stats": {
+      "totalProjects": "Total Projects",
+      "activeProjects": "Active Projects",
+      "completedTasks": "Completed Tasks",
+      "overdueTasks": "Overdue Tasks"
+    },
+    "captions": {
+      "createdThisMonth": "+{{value}} this month",
+      "inProgress": "Currently in progress",
+      "completedThisMonth": "{{value}} this month",
+      "needsAttention": "Needs attention",
+      "allOnTrack": "All on track"
+    }
+  },
+  "projects": {
+    "subtitle": "All your projects in one place.",
+    "empty": "No projects yet.",
+    "progress": "Project progress",
+    "noTasks": "No tasks yet",
+    "tasksDone": "{{done}} of {{total}} tasks done",
+    "due": "Due {{date}}",
+    "status": {
+      "planning": "Planning",
+      "active": "Active",
+      "completed": "Completed"
+    },
+    "new": "New project",
+    "form": {
+      "title": "New project",
+      "name": "Name",
+      "namePlaceholder": "e.g. Portfolio Website",
+      "description": "Description",
+      "descriptionPlaceholder": "What is this project about?",
+      "status": "Status",
+      "color": "Color",
+      "dueDate": "Due date",
+      "cancel": "Cancel",
+      "create": "Create project",
+      "errors": {
+        "nameRequired": "Enter a project name",
+        "nameTooLong": "Name must be 60 characters or fewer",
+        "descriptionTooLong": "Description must be 200 characters or fewer",
+        "dueDateRequired": "Choose a due date"
+      }
+    },
+    "colors": {
+      "violet": "Violet",
+      "emerald": "Emerald",
+      "blue": "Blue",
+      "rose": "Rose"
+    }
+  },
+  "projectDetails": {
+    "back": "Back to projects",
+    "tasksTitle": "Tasks",
+    "noTasks": "No tasks in this project yet.",
+    "notFoundTitle": "Project not found",
+    "notFoundText": "This project does not exist or was removed."
+  },
+  "tasks": {
+    "status": {
+      "todo": "To Do",
+      "in_progress": "In Progress",
+      "done": "Done"
+    },
+    "priority": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "due": "Due {{date}}"
   }
 }

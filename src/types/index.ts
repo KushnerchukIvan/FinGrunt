@@ -1,6 +1,7 @@
 export type TaskStatus = 'todo' | 'in_progress' | 'done'
 export type TaskPriority = 'low' | 'medium' | 'high'
 export type ProjectStatus = 'planning' | 'active' | 'completed'
+export type ProjectColor = 'violet' | 'emerald' | 'blue' | 'rose'
 
 export type User = {
   id: string
@@ -15,7 +16,7 @@ export type Project = {
   name: string
   description: string
   status: ProjectStatus
-  color: string
+  color: ProjectColor
   ownerId: string
   dueDate: string
   createdAt: string

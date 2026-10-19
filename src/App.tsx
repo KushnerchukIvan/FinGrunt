@@ -3,6 +3,7 @@ import Sidebar from "./components/layout/Sidebar"
 import Analytics from "./pages/Analytics"
 import Calendar from "./pages/Calendar"
 import Dashboard from "./pages/Dashboard"
+import ProjectDetails from "./pages/ProjectDetails"
 import Projects from "./pages/Projects"
 import Settings from "./pages/Settings"
 import Tasks from "./pages/Tasks"
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:id" element={<ProjectDetails />} />
             <Route path="/tasks" element={<Tasks />} />
             <Route path="/calendar" element={<Calendar />} />
             <Route path="/analytics" element={<Analytics />} />

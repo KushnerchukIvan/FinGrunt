@@ -9,17 +9,90 @@
   },
   "header": {
     "welcome": "Вітаємо!",
-    "description": "Огляд ваших фінансів."
+    "description": "Ваші проєкти на одному екрані."
   },
   "common": {
     "language": "Мова",
     "profile": "Профіль",
-    "financialOverview": "Financial overview"
+    "close": "Закрити"
   },
   "paragraph": {
     "proTip": "Порада",
-    "vsLastMonth": "vs. last month",
-    "HereIsWhatIsHappeningWithYourMoney": "Here is what is happening with your money.",
     "breakBigProjectsIntoSmallTasks": "Розбивайте великі проєкти на невеликі завдання, щоб рухатися стабільно."
+  },
+  "dashboard": {
+    "subtitle": "Ось що відбувається з вашими проєктами.",
+    "overview": "Огляд проєктів",
+    "stats": {
+      "totalProjects": "Усього проєктів",
+      "activeProjects": "Активні проєкти",
+      "completedTasks": "Виконані завдання",
+      "overdueTasks": "Прострочені завдання"
+    },
+    "captions": {
+      "createdThisMonth": "+{{value}} цього місяця",
+      "inProgress": "Зараз у роботі",
+      "completedThisMonth": "{{value}} цього місяця",
+      "needsAttention": "Потребують уваги",
+      "allOnTrack": "Усе за планом"
+    }
+  },
+  "projects": {
+    "subtitle": "Усі ваші проєкти в одному місці.",
+    "empty": "Проєктів поки немає.",
+    "progress": "Прогрес проєкту",
+    "noTasks": "Завдань поки немає",
+    "tasksDone": "{{done}} з {{total}} завдань виконано",
+    "due": "Дедлайн: {{date}}",
+    "status": {
+      "planning": "Планування",
+      "active": "Активний",
+      "completed": "Завершений"
+    },
+    "new": "Новий проєкт",
+    "form": {
+      "title": "Новий проєкт",
+      "name": "Назва",
+      "namePlaceholder": "Наприклад, Portfolio Website",
+      "description": "Опис",
+      "descriptionPlaceholder": "Про що цей проєкт?",
+      "status": "Статус",
+      "color": "Колір",
+      "dueDate": "Дедлайн",
+      "cancel": "Скасувати",
+      "create": "Створити проєкт",
+      "errors": {
+        "nameRequired": "Введіть назву проєкту",
+        "nameTooLong": "Назва має містити не більше 60 символів",
+        "descriptionTooLong": "Опис має містити не більше 200 символів",
+        "dueDateRequired": "Оберіть дедлайн"
+      }
+    },
+    "colors": {
+      "violet": "Фіолетовий",
+      "emerald": "Зелений",
+      "blue": "Синій",
+      "rose": "Червоний"
+    }
+  },
+  "projectDetails": {
+    "back": "Назад до проєктів",
+    "tasksTitle": "Завдання",
+    "noTasks": "У цьому проєкті поки немає завдань.",
+    "notFoundTitle": "Проєкт не знайдено",
+    "notFoundText": "Такого проєкту не існує або його видалено."
+  },
+  "tasks": {
+    "status": {
+      "todo": "До виконання",
+      "in_progress": "У роботі",
+      "done": "Виконано"
+    },
+    "priority": {
+      "low": "Низький",
+      "medium": "Середній",
+      "high": "Високий"
+    },
+    "due": "Дедлайн: {{date}}"
   }
 }

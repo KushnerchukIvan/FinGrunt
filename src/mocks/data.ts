@@ -36,7 +36,7 @@ export const projects: Project[] = [
     color: 'blue',
     ownerId: 'u1',
     dueDate: '2026-10-30',
-    createdAt: '2026-09-20T10:00:00.000Z',
+    createdAt: '2026-10-08T10:00:00.000Z',
   },
   {
     id: 'p4',
@@ -132,8 +132,8 @@ export const tasks: Task[] = [
     priority: 'medium',
     assigneeId: 'u1',
     dueDate: '2026-10-14',
-    createdAt: '2026-09-21T10:00:00.000Z',
-    updatedAt: '2026-09-21T10:00:00.000Z',
+    createdAt: '2026-10-09T10:00:00.000Z',
+    updatedAt: '2026-10-09T10:00:00.000Z',
   },
   {
     id: 't8',
@@ -144,8 +144,8 @@ export const tasks: Task[] = [
     priority: 'low',
     assigneeId: 'u1',
     dueDate: '2026-10-28',
-    createdAt: '2026-09-22T10:00:00.000Z',
-    updatedAt: '2026-09-22T10:00:00.000Z',
+    createdAt: '2026-10-10T10:00:00.000Z',
+    updatedAt: '2026-10-10T10:00:00.000Z',
   },
   {
     id: 't9',

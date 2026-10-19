@@ -22,7 +22,7 @@ export default function Header() {
   }
 
   return (
-    <header className="mb-8 flex items-center justify-between">
+    <header className="mb-6 flex min-w-0 items-start justify-between gap-2 px-3 py-3 sm:mb-8 sm:items-center sm:px-6">
       <div>
         <h2 className="text-2xl font-bold">{t('header.welcome')}</h2>
         <p className="mt-1 text-sm text-slate-400">

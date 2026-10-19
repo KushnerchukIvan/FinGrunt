@@ -11,6 +11,13 @@
   },
   "common": {
   "language": "Мова",
-  "profile": "Профіль"
-}
+  "profile": "Профіль",
+  "financialOverview": "Financial overview"
+  },
+  "paragraph": {
+    "proTip": "Порада",
+    "trackYourExpensesDailyToReachYourFinancialGoals": "Відстежуйте свої витрати щодня, щоб досягти фінансових цілей.",
+    "vsLastMonth": "vs. last month",
+    "HereIsWhatIsHappeningWithYourMoney": "Here is what is happening with your money."
+  }
 }

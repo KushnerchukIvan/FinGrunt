@@ -11,6 +11,13 @@
   },
   "common": {
   "language": "Language",
-  "profile": "Profile"
-}
+  "profile": "Profile",
+  "financialOverview": "Financial overview"
+  },
+  "paragraph": {
+    "proTip": "Pro tip",
+    "trackYourExpensesDailyToReachYourFinancialGoals": "Track your expenses daily to reach your financial goals.",
+    "vsLastMonth": "vs. last month",
+    "HereIsWhatIsHappeningWithYourMoney": "Here is what is happening with your money."
+  }
 }

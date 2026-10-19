@@ -8,18 +8,21 @@ import Header from "./components/layout/Header"
 
 function App() {
   return (
-    <div className="flex min-h-screen bg-slate-950 text-white">
+    <div className="flex min-h-dvh w-full min-w-0 bg-slate-950 text-white">
       <Sidebar />
 
-      <main className="flex-1 p-8">
+      <div className="flex min-h-dvh min-w-0 flex-1 flex-col">
         <Header />
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/transactions" element={<Transactions />} />
-          <Route path="/analytics" element={<Analytics />} />
-          <Route path="/budgets" element={<Budgets />} />
-        </Routes>
-      </main>
+
+        <main className="min-w-0 flex-1 p-4 sm:p-6 lg:p-8">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/transactions" element={<Transactions />} />
+            <Route path="/analytics" element={<Analytics />} />
+            <Route path="/budgets" element={<Budgets />} />
+          </Routes>
+        </main>
+      </div>
     </div>
   )
 }

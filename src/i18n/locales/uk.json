@@ -1,23 +1,25 @@
 {
   "navigation": {
     "dashboard": "Головна",
-    "transactions": "Транзакції",
+    "projects": "Проєкти",
+    "tasks": "Мої завдання",
+    "calendar": "Календар",
     "analytics": "Аналітика",
-    "budgets": "Бюджети"
+    "settings": "Налаштування"
   },
   "header": {
     "welcome": "Вітаємо!",
     "description": "Огляд ваших фінансів."
   },
   "common": {
-  "language": "Мова",
-  "profile": "Профіль",
-  "financialOverview": "Financial overview"
+    "language": "Мова",
+    "profile": "Профіль",
+    "financialOverview": "Financial overview"
   },
   "paragraph": {
     "proTip": "Порада",
-    "trackYourExpensesDailyToReachYourFinancialGoals": "Відстежуйте свої витрати щодня, щоб досягти фінансових цілей.",
     "vsLastMonth": "vs. last month",
-    "HereIsWhatIsHappeningWithYourMoney": "Here is what is happening with your money."
+    "HereIsWhatIsHappeningWithYourMoney": "Here is what is happening with your money.",
+    "breakBigProjectsIntoSmallTasks": "Розбивайте великі проєкти на невеликі завдання, щоб рухатися стабільно."
   }
 }

@@ -36,7 +36,7 @@ export default function StatCard({title, amount, change, icon: Icon, color,}: St
             <div className="mt-5 flex items-center gap-2 text-sm">
                 {isPositive ? 
                 (<ArrowUpRight size={16} className="text-emerald-400" />) : 
-                (<ArrowUpRight size={16} className="text-rose-400" />)}
+                (<ArrowDownRight size={16} className="text-rose-400" />)}
                 <span className={isPositive ? 'text-emerald-400' : 'text-rose-400'}>
                     {isPositive ? '+' : ''}{change}%
                 </span>

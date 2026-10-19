@@ -1,9 +1,11 @@
 import { Routes, Route } from "react-router"
 import Sidebar from "./components/layout/Sidebar"
 import Analytics from "./pages/Analytics"
-import Budgets from "./pages/Budgets"
+import Calendar from "./pages/Calendar"
 import Dashboard from "./pages/Dashboard"
-import Transactions from "./pages/Transactions"
+import Projects from "./pages/Projects"
+import Settings from "./pages/Settings"
+import Tasks from "./pages/Tasks"
 import Header from "./components/layout/Header"
 
 function App() {
@@ -17,9 +19,11 @@ function App() {
         <main className="min-w-0 flex-1 p-4 sm:p-6 lg:p-8">
           <Routes>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/transactions" element={<Transactions />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/tasks" element={<Tasks />} />
+            <Route path="/calendar" element={<Calendar />} />
             <Route path="/analytics" element={<Analytics />} />
-            <Route path="/budgets" element={<Budgets />} />
+            <Route path="/settings" element={<Settings />} />
           </Routes>
         </main>
       </div>

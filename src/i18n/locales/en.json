@@ -1,23 +1,25 @@
 {
   "navigation": {
     "dashboard": "Dashboard",
-    "transactions": "Transactions",
+    "projects": "Projects",
+    "tasks": "My Tasks",
+    "calendar": "Calendar",
     "analytics": "Analytics",
-    "budgets": "Budgets"
+    "settings": "Settings"
   },
   "header": {
     "welcome": "Welcome!",
     "description": "Your financial overview."
   },
   "common": {
-  "language": "Language",
-  "profile": "Profile",
-  "financialOverview": "Financial overview"
+    "language": "Language",
+    "profile": "Profile",
+    "financialOverview": "Financial overview"
   },
   "paragraph": {
     "proTip": "Pro tip",
-    "trackYourExpensesDailyToReachYourFinancialGoals": "Track your expenses daily to reach your financial goals.",
     "vsLastMonth": "vs. last month",
-    "HereIsWhatIsHappeningWithYourMoney": "Here is what is happening with your money."
+    "HereIsWhatIsHappeningWithYourMoney": "Here is what is happening with your money.",
+    "breakBigProjectsIntoSmallTasks": "Break big projects into small tasks to make steady progress."
   }
 }

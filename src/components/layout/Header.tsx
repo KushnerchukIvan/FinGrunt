@@ -22,15 +22,15 @@ export default function Header() {
   }
 
   return (
-    <header className="mb-6 flex min-w-0 items-start justify-between gap-2 px-3 py-3 sm:mb-8 sm:items-center sm:px-6">
-      <div>
+    <header className="mb-6 flex min-w-0 items-start justify-between gap-2 px-4 py-3 sm:mb-8 sm:items-center sm:px-6 lg:px-8">
+      <div className="min-w-0">
         <h2 className="text-2xl font-bold">{t('header.welcome')}</h2>
         <p className="mt-1 text-sm text-slate-400">
           {t('header.description')}
         </p>
       </div>
 
-      <div className="flex items-center gap-3">
+      <div className="flex shrink-0 items-center gap-3">
         <div className="relative">
           <button
             type="button"

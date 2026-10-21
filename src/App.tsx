@@ -1,13 +1,14 @@
-import { Routes, Route } from "react-router"
-import Sidebar from "./components/layout/Sidebar"
-import Analytics from "./pages/Analytics"
-import Calendar from "./pages/Calendar"
-import Dashboard from "./pages/Dashboard"
-import ProjectDetails from "./pages/ProjectDetails"
-import Projects from "./pages/Projects"
-import Settings from "./pages/Settings"
-import Tasks from "./pages/Tasks"
-import Header from "./components/layout/Header"
+import { Route, Routes } from 'react-router'
+import Header from './components/layout/Header'
+import Sidebar from './components/layout/Sidebar'
+import Budgets from './pages/Budgets'
+import Dashboard from './pages/Dashboard'
+import Learn from './pages/Learn'
+import LessonPage from './pages/LessonPage'
+import NotFound from './pages/NotFound'
+import Settings from './pages/Settings'
+import Tools from './pages/Tools'
+import Transactions from './pages/Transactions'
 
 function App() {
   return (
@@ -20,12 +21,13 @@ function App() {
         <main className="min-w-0 flex-1 p-4 sm:p-6 lg:p-8">
           <Routes>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/projects/:id" element={<ProjectDetails />} />
-            <Route path="/tasks" element={<Tasks />} />
-            <Route path="/calendar" element={<Calendar />} />
-            <Route path="/analytics" element={<Analytics />} />
+            <Route path="/transactions" element={<Transactions />} />
+            <Route path="/budgets" element={<Budgets />} />
+            <Route path="/learn" element={<Learn />} />
+            <Route path="/learn/:id" element={<LessonPage />} />
+            <Route path="/tools" element={<Tools />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
       </div>

@@ -1,98 +1,273 @@
 {
-  "navigation": {
-    "dashboard": "Dashboard",
-    "projects": "Projects",
-    "tasks": "My Tasks",
-    "calendar": "Calendar",
-    "analytics": "Analytics",
-    "settings": "Settings"
-  },
-  "header": {
-    "welcome": "Welcome!",
-    "description": "Your projects at a glance."
-  },
   "common": {
     "language": "Language",
     "profile": "Profile",
-    "close": "Close"
+    "close": "Close",
+    "disclaimer": "FinGrunt is for educational purposes only and does not provide financial, investment, tax or legal advice."
+  },
+  "header": {
+    "welcome": "Welcome!",
+    "description": "Learn to manage your money wisely."
+  },
+  "navigation": {
+    "label": "Main navigation",
+    "dashboard": "Dashboard",
+    "transactions": "Transactions",
+    "budgets": "Budgets",
+    "learn": "Learn",
+    "tools": "Tools",
+    "settings": "Settings"
   },
   "paragraph": {
     "proTip": "Pro tip",
-    "breakBigProjectsIntoSmallTasks": "Break big projects into small tasks to make steady progress."
+    "payYourselfFirst": "Pay yourself first: move money to savings as soon as you get paid."
+  },
+  "confirm": {
+    "cancel": "Cancel"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "This page does not exist.",
+    "home": "Back to dashboard"
+  },
+  "categories": {
+    "food": "Food",
+    "housing": "Housing",
+    "transport": "Transport",
+    "utilities": "Utilities",
+    "health": "Health",
+    "education": "Education",
+    "entertainment": "Entertainment",
+    "shopping": "Shopping",
+    "other_expense": "Other expenses",
+    "salary": "Salary",
+    "freelance": "Freelance",
+    "gift": "Gifts",
+    "other_income": "Other income"
   },
   "dashboard": {
-    "subtitle": "Here is what is happening with your projects.",
-    "overview": "Projects overview",
+    "subtitle": "Your money at a glance, with tips to improve it.",
+    "overview": "Financial overview",
     "stats": {
-      "totalProjects": "Total Projects",
-      "activeProjects": "Active Projects",
-      "completedTasks": "Completed Tasks",
-      "overdueTasks": "Overdue Tasks"
+      "balance": "Balance",
+      "income": "Income",
+      "expenses": "Expenses",
+      "savingsRate": "Savings rate"
     },
     "captions": {
-      "createdThisMonth": "+{{value}} this month",
-      "inProgress": "Currently in progress",
-      "completedThisMonth": "{{value}} this month",
-      "needsAttention": "Needs attention",
-      "allOnTrack": "All on track"
-    }
-  },
-  "projects": {
-    "subtitle": "All your projects in one place.",
-    "empty": "No projects yet.",
-    "progress": "Project progress",
-    "noTasks": "No tasks yet",
-    "tasksDone": "{{done}} of {{total}} tasks done",
-    "due": "Due {{date}}",
-    "status": {
-      "planning": "Planning",
-      "active": "Active",
-      "completed": "Completed"
+      "allTime": "All time",
+      "savingsGoal": "A common goal is 20% or more"
     },
-    "new": "New project",
+    "charts": {
+      "categories": "Spending by category",
+      "monthly": "Income vs expenses",
+      "noExpenses": "No expenses this month yet.",
+      "categoriesAria": "Chart of this month's spending by category",
+      "monthlyAria": "Chart of monthly income and expenses"
+    },
+    "insights": "Insights",
+    "budgets": "Budgets",
+    "manage": "Manage",
+    "noBudgets": "No budget limits set yet.",
+    "learning": "Keep learning",
+    "nextLesson": "Next lesson",
+    "allLessonsDone": "You completed all lessons. Great work!",
+    "recent": "Recent transactions",
+    "viewAll": "View all"
+  },
+  "transactions": {
+    "subtitle": "Track your income and expenses.",
+    "new": "Add transaction",
+    "income": "Income",
+    "expense": "Expense",
+    "net": "Net",
+    "searchLabel": "Search transactions",
+    "searchPlaceholder": "Search by note or category...",
+    "filterType": "Filter by type",
+    "filterCategory": "Filter by category",
+    "filterMonth": "Filter by month",
+    "allTypes": "All types",
+    "allCategories": "All categories",
+    "allMonths": "All months",
+    "empty": "No transactions match your filters.",
+    "emptyAll": "No transactions yet. Add your first one.",
+    "editLabel": "Edit transaction {{name}}",
+    "deleteLabel": "Delete transaction {{name}}",
     "form": {
-      "title": "New project",
-      "name": "Name",
-      "namePlaceholder": "e.g. Portfolio Website",
-      "description": "Description",
-      "descriptionPlaceholder": "What is this project about?",
-      "status": "Status",
-      "color": "Color",
-      "dueDate": "Due date",
-      "cancel": "Cancel",
-      "create": "Create project",
+      "title": "New transaction",
+      "editTitle": "Edit transaction",
+      "type": "Type",
+      "amount": "Amount",
+      "date": "Date",
+      "category": "Category",
+      "categoryPlaceholder": "Select a category",
+      "note": "Note",
+      "notePlaceholder": "e.g. Groceries",
+      "create": "Add transaction",
+      "save": "Save changes",
       "errors": {
-        "nameRequired": "Enter a project name",
-        "nameTooLong": "Name must be 60 characters or fewer",
-        "descriptionTooLong": "Description must be 200 characters or fewer",
-        "dueDateRequired": "Choose a due date"
+        "amountInvalid": "Enter an amount greater than zero",
+        "amountTooLarge": "Amount is too large",
+        "categoryRequired": "Select a category",
+        "dateRequired": "Choose a date",
+        "noteTooLong": "Note must be 100 characters or fewer"
       }
     },
-    "colors": {
-      "violet": "Violet",
-      "emerald": "Emerald",
-      "blue": "Blue",
-      "rose": "Rose"
+    "deleteConfirm": {
+      "title": "Delete transaction?",
+      "message": "The transaction \"{{name}}\" will be permanently deleted.",
+      "confirm": "Delete transaction"
     }
   },
-  "projectDetails": {
-    "back": "Back to projects",
-    "tasksTitle": "Tasks",
-    "noTasks": "No tasks in this project yet.",
-    "notFoundTitle": "Project not found",
-    "notFoundText": "This project does not exist or was removed."
+  "budgets": {
+    "subtitle": "Monthly spending limits for {{month}}.",
+    "noLimits": "Set limits for the categories you want to control.",
+    "totalSummary": "{{spent}} spent of {{limit}} in budgeted categories",
+    "totalLabel": "Total budget usage",
+    "setLimit": "Set limit",
+    "setLimitFor": "Set limit for {{name}}",
+    "editLimitFor": "Edit limit for {{name}}",
+    "noLimitSpent": "No limit set. Spent {{spent}} this month.",
+    "spentOf": "{{spent}} of {{limit}}",
+    "over": "{{amount}} over",
+    "left": "{{amount}} left",
+    "progressLabel": "Budget usage for {{name}}",
+    "dialogTitle": "Monthly limit: {{name}}",
+    "limitLabel": "Monthly limit",
+    "invalidLimit": "Enter a limit greater than zero",
+    "removeLimit": "Remove limit",
+    "save": "Save limit"
   },
-  "tasks": {
-    "status": {
-      "todo": "To Do",
-      "in_progress": "In Progress",
-      "done": "Done"
+  "learn": {
+    "subtitle": "Short lessons with quizzes to build solid money habits.",
+    "progress": "{{done}} of {{total}} lessons completed",
+    "progressLabel": "Learning progress",
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate"
     },
-    "priority": {
-      "low": "Low",
-      "medium": "Medium",
-      "high": "High"
+    "minutes": "{{minutes}} min",
+    "completed": "Completed · best score {{score}}/{{total}}",
+    "notStarted": "Not completed yet",
+    "back": "Back to lessons",
+    "notFoundTitle": "Lesson not found",
+    "notFoundText": "This lesson does not exist.",
+    "completedBadge": "Completed",
+    "quiz": {
+      "title": "Check yourself",
+      "subtitle": "Answer {{pass}} of {{total}} questions correctly to complete the lesson.",
+      "submit": "Check answers",
+      "score": "Your score: {{score}} of {{total}}",
+      "passed": "Lesson completed. Well done!",
+      "failed": "You need at least {{pass}} correct answers. Read the lesson again and retry.",
+      "retry": "Try again"
+    }
+  },
+  "tools": {
+    "subtitle": "Calculators to plan, compare and understand your money decisions.",
+    "pickerLabel": "Choose a calculator",
+    "result": "Result",
+    "invalid": "Enter valid numbers to see the result.",
+    "annualRate": "Annual rate",
+    "duration": "{{years}} yr {{months}} mo",
+    "budgetRule": {
+      "name": "50/30/20 budget",
+      "description": "Splits your monthly income into needs, wants and savings. It is a starting point, not a strict rule.",
+      "income": "Monthly income",
+      "needs": "Needs (50%)",
+      "wants": "Wants (30%)",
+      "savings": "Savings (20%)"
     },
-    "due": "Due {{date}}"
+    "savingsGoal": {
+      "name": "Savings goal",
+      "goal": "Goal amount",
+      "saved": "Already saved",
+      "monthly": "Monthly contribution",
+      "targetMonths": "Target period (months)",
+      "timeNeeded": "Time to reach the goal",
+      "requiredMonthly": "Needed per month for {{months}} months",
+      "unreachable": "Not reachable with these inputs",
+      "reached": "Goal already reached"
+    },
+    "compound": {
+      "name": "Compound interest",
+      "initial": "Initial amount",
+      "monthly": "Monthly contribution",
+      "years": "Years",
+      "final": "Final balance",
+      "contributed": "Total contributed",
+      "interest": "Interest earned",
+      "balance": "Balance",
+      "chartAria": "Chart of balance growth by year",
+      "yearLabel": "Year {{year}}"
+    },
+    "loan": {
+      "name": "Loan payment",
+      "description": "Estimates the monthly payment for an equal-payment (annuity) loan. Real offers may include extra fees.",
+      "principal": "Loan amount",
+      "months": "Term (months)",
+      "monthly": "Monthly payment",
+      "total": "Total to repay",
+      "overpayment": "Overpayment",
+      "overpaymentShare": "Overpayment as share of loan"
+    },
+    "inflation": {
+      "name": "Inflation",
+      "description": "Shows how inflation reduces what your money can buy.",
+      "amount": "Amount today",
+      "rate": "Annual inflation",
+      "years": "Years",
+      "purchasingPower": "Purchasing power in the future",
+      "lostShare": "Value lost",
+      "futurePrice": "Price of the same goods then"
+    },
+    "emergency": {
+      "name": "Emergency fund",
+      "description": "A common guideline is 3 to 6 months of essential expenses.",
+      "expenses": "Monthly essential expenses",
+      "saved": "Already saved",
+      "months": "Months to cover",
+      "target": "Target fund",
+      "gap": "Still to save",
+      "coverage": "Current coverage",
+      "coverageValue": "{{value}} months",
+      "progress": "Emergency fund progress"
+    }
+  },
+  "insights": {
+    "noData": "No transactions this month yet. Add your income and expenses to see insights.",
+    "overspending": "You spent {{amount}} more than you earned this month. Review your largest categories.",
+    "goodSavings": "Great job! You saved {{rate}} of your income this month.",
+    "lowSavings": "You saved only {{rate}} of your income this month. Try setting savings aside first.",
+    "overBudget": "{{category}} is over budget: {{spent}} spent of {{limit}}.",
+    "topCategory": "{{category}} takes {{share}} of your spending this month.",
+    "noBudgets": "You have no budget limits yet. Set limits to keep spending under control.",
+    "readLesson": "Read the lesson"
+  },
+  "settings": {
+    "subtitle": "Customize FinGrunt and manage your data.",
+    "preferences": "Preferences",
+    "currency": "Currency",
+    "currencyHint": "Only the display format changes. Amounts are not converted.",
+    "currencies": {
+      "UAH": "Hryvnia (UAH)",
+      "USD": "US dollar (USD)",
+      "EUR": "Euro (EUR)"
+    },
+    "data": "Your data",
+    "dataHint": "Data is stored only in this browser.",
+    "loadDemo": "Load demo data",
+    "clearAll": "Clear all data",
+    "about": "About",
+    "demoConfirm": {
+      "title": "Load demo data?",
+      "message": "Your current transactions and budgets will be replaced with demo data.",
+      "confirm": "Load demo data"
+    },
+    "clearConfirm": {
+      "title": "Clear all data?",
+      "message": "All transactions, budgets and lesson progress will be permanently deleted.",
+      "confirm": "Clear all data"
+    }
   }
 }

@@ -13,3 +13,36 @@ export function formatDateKey(dateKey: string, locale: string): string {
     year: 'numeric',
   })
 }
+
+export function monthKeyOf(dateKey: string): string {
+  return dateKey.slice(0, 7)
+}
+
+export function currentMonthKey(today: Date = new Date()): string {
+  return toDateKey(today).slice(0, 7)
+}
+
+export function shiftMonthKey(monthKey: string, delta: number): string {
+  const [year, month] = monthKey.split('-').map(Number)
+  const date = new Date(year, month - 1 + delta, 1)
+  return toDateKey(date).slice(0, 7)
+}
+
+export function lastMonthKeys(count: number, today: Date = new Date()): string[] {
+  const current = currentMonthKey(today)
+  return Array.from({ length: count }, (_, index) =>
+    shiftMonthKey(current, index - (count - 1)),
+  )
+}
+
+export function formatMonthKey(
+  monthKey: string,
+  locale: string,
+  style: 'long' | 'short' = 'long',
+): string {
+  const [year, month] = monthKey.split('-').map(Number)
+  return new Date(year, month - 1, 1).toLocaleDateString(locale, {
+    month: style,
+    year: style === 'long' ? 'numeric' : undefined,
+  })
+}

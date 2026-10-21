@@ -1,36 +1,32 @@
-export type TaskStatus = 'todo' | 'in_progress' | 'done'
-export type TaskPriority = 'low' | 'medium' | 'high'
-export type ProjectStatus = 'planning' | 'active' | 'completed'
-export type ProjectColor = 'violet' | 'emerald' | 'blue' | 'rose'
+import type { CategoryId, ExpenseCategoryId } from '../constants/categories'
 
-export type User = {
+export type {
+  CategoryId,
+  ExpenseCategoryId,
+  IncomeCategoryId,
+} from '../constants/categories'
+
+export type TransactionType = 'income' | 'expense'
+export type CurrencyCode = 'UAH' | 'USD' | 'EUR'
+
+export type Transaction = {
   id: string
-  name: string
-  email: string
-  avatarUrl?: string
+  type: TransactionType
+  amount: number
+  categoryId: CategoryId
+  date: string
+  note: string
   createdAt: string
 }
 
-export type Project = {
-  id: string
-  name: string
-  description: string
-  status: ProjectStatus
-  color: ProjectColor
-  ownerId: string
-  dueDate: string
-  createdAt: string
+export type Budgets = Partial<Record<ExpenseCategoryId, number>>
+
+export type LessonProgress = {
+  completed: boolean
+  bestScore: number
+  attempts: number
 }
 
-export type Task = {
-  id: string
-  projectId: string
-  title: string
-  description: string
-  status: TaskStatus
-  priority: TaskPriority
-  assigneeId: string
-  dueDate: string
-  createdAt: string
-  updatedAt: string
+export type Settings = {
+  currency: CurrencyCode
 }

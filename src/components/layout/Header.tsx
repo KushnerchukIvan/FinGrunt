@@ -22,7 +22,7 @@ export default function Header() {
   }
 
   return (
-    <header className="mb-6 flex min-w-0 items-start justify-between gap-2 px-4 py-3 sm:mb-8 sm:items-center sm:px-6 lg:px-8">
+    <header className="mb-6 flex min-w-0 flex-col-reverse gap-3 px-4 py-3 sm:mb-8 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
       <div className="min-w-0">
         <h2 className="text-2xl font-bold">{t('header.welcome')}</h2>
         <p className="mt-1 text-sm text-slate-400">
@@ -30,14 +30,14 @@ export default function Header() {
         </p>
       </div>
 
-      <div className="flex shrink-0 items-center gap-3">
+      <div className="relative flex shrink-0 items-center gap-3 self-end sm:self-auto">
         <div className="relative">
           <button
             type="button"
             onClick={() => setIsLanguageMenuOpen((open) => !open)}
             aria-expanded={isLanguageMenuOpen}
             aria-haspopup="menu"
-            className="flex items-center gap-2 rounded-xl border border-slate-800 px-4 py-2 text-sm hover:bg-slate-900"
+            className="flex shrink-0 items-center gap-3 self-end sm:self-auto"
           >
             <Globe size={18} />
             {currentLanguage.code.toUpperCase()}
@@ -52,7 +52,7 @@ export default function Header() {
           {isLanguageMenuOpen && (
             <div
               role="menu"
-              className="absolute right-0 z-50 mt-2 w-48 rounded-xl border border-slate-800 bg-slate-950 p-1 shadow-xl"
+              className="absolute right-0 top-full z-50 mt-2 w-48 rounded-xl border border-slate-800 bg-slate-950 p-1 shadow-xl"
             >
               {languages.map((language) => {
                 const isActive = currentLanguage.code === language.code

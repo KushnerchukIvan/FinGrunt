@@ -27,11 +27,11 @@ export default function StatCard({
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
           <p className="text-sm text-slate-400">{title}</p>
-          <h3 className="mt-3 truncate text-2xl font-bold tracking-tight sm:text-3xl">
+          <h3 className="mt-3 break-words text-xl font-bold tracking-tight sm:text-3xl">
             {value}
           </h3>
         </div>
-        <div className={`rounded-xl p-3 ${colorStyle[color]}`}>
+        <div className={`shrink-0 rounded-xl p-2.5 sm:p-3 ${colorStyle[color]}`}>
           <Icon size={22} />
         </div>
       </div>
